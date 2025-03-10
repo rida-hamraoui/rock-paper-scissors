@@ -17,7 +17,7 @@ let computerScore = 0;
 
 // Change the displayed result 
 function displayResult(message){
-    roundResult.textContent = message;
+    Result.textContent = message;
 }
 
 // Function get result of a game round betwen human and computer
@@ -25,7 +25,7 @@ function playRound(human){
     let computer = getComputerChoice();
 
     if(human.toLowerCase() == computer.toLowerCase()){
-        displaResult("It's a draw");
+        displayResult("It's a draw");
     }else if(human.toLowerCase() == "paper" && computer.toLowerCase() == "scissors"){
         displayResult("You lose! Scissors beats Paper");
         computerScore++;
